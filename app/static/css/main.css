@@ -1,0 +1,14 @@
+.icon-login{
+    height:400px;
+    width: 400px;
+}
+
+.icon{
+    height: 50px;
+    width: 50px;
+}
+
+.form{
+    border: 1px solid rgb(128, 128, 128);
+    border-radius:15%;
+}

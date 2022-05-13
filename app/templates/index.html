@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'extends/header.html' %}
+<body>
+    {% include 'extends/nav.html' %}
+    <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-6">
+                <form class="d-flex justify-content-center mt-5">
+                    <div class="form-group row">
+                      <label for="exampleFormControlFile1">Sube tus archivos: </label>
+                      <div class="col-sm">
+                        <input type="file" class="form-control-file" id="files" multiple>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="d-flex justify-content-center col-sm mt-5">
+                    <button class="btn btn-outline-success"id="request">
+                        Hacer peticion
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="{{url_for('static', filename='js/sendRequiest.js')}}"></script>
+</body>
+</html>
